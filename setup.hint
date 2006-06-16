@@ -1,0 +1,6 @@
+category: Gnome Text
+requires: cygwin atk gtk2-x11
+sdesc: "GTK2 touch typing tutor"
+ldesc: "Klavaro is just another free touch typing tutor program, based
+on GTK2. Klavaro intends to be keyboard and language independent, saving
+memory and time (and money)."

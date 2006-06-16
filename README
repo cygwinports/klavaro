@@ -1,0 +1,181 @@
+klavaro
+------------------------------------------
+Klavaro is just another free touch typing tutor program, based on GTK2.
+Klavaro intends to be keyboard and language independent, saving memory
+and time (and money).
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  atk-1.10.3-1
+  gtk2-x11-2.8.13-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.4-1.4p6-1
+  binutils-20050610-1
+  cygport-0.1.6-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://klavaro.sourceforge.net/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/klavaro/
+
+-------------------------------------------
+
+Build instructions:
+  unpack klavaro-0.9.7-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./klavaro-0.9.7-X.sh all
+
+This will create:
+  /usr/src/klavaro-0.9.7-X-src.tar.bz2
+  /usr/src/klavaro-0.9.7-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/klavaro.exe
+  /usr/share/doc/Cygwin/klavaro-0.9.7.README
+  /usr/share/doc/klavaro-0.9.7/ABOUT-NLS
+  /usr/share/doc/klavaro-0.9.7/AUTHORS
+  /usr/share/doc/klavaro-0.9.7/COPYING
+  /usr/share/doc/klavaro-0.9.7/ChangeLog
+  /usr/share/doc/klavaro-0.9.7/INSTALL
+  /usr/share/doc/klavaro-0.9.7/NEWS
+  /usr/share/doc/klavaro-0.9.7/README
+  /usr/share/klavaro/C.paragraphs
+  /usr/share/klavaro/C.words
+  /usr/share/klavaro/C_about.txt
+  /usr/share/klavaro/C_adapt_intro.txt
+  /usr/share/klavaro/C_basic_intro.txt
+  /usr/share/klavaro/C_fluid_intro.txt
+  /usr/share/klavaro/C_help.txt
+  /usr/share/klavaro/C_intro.txt
+  /usr/share/klavaro/C_velo_intro.txt
+  /usr/share/klavaro/azerty_fr.kbd
+  /usr/share/klavaro/basic_lessons.txt
+  /usr/share/klavaro/cs_CZ.paragraphs
+  /usr/share/klavaro/cs_CZ.words
+  /usr/share/klavaro/cs_CZ_about.txt
+  /usr/share/klavaro/cs_CZ_adapt_intro.txt
+  /usr/share/klavaro/cs_CZ_basic_intro.txt
+  /usr/share/klavaro/cs_CZ_fluid_intro.txt
+  /usr/share/klavaro/cs_CZ_help.txt
+  /usr/share/klavaro/cs_CZ_intro.txt
+  /usr/share/klavaro/cs_CZ_velo_intro.txt
+  /usr/share/klavaro/de_DE.paragraphs
+  /usr/share/klavaro/de_DE.words
+  /usr/share/klavaro/de_DE_about.txt
+  /usr/share/klavaro/de_DE_adapt_intro.txt
+  /usr/share/klavaro/de_DE_basic_intro.txt
+  /usr/share/klavaro/de_DE_fluid_intro.txt
+  /usr/share/klavaro/de_DE_help.txt
+  /usr/share/klavaro/de_DE_velo_intro.txt
+  /usr/share/klavaro/dvorak_br.kbd
+  /usr/share/klavaro/dvorak_fr.kbd
+  /usr/share/klavaro/dvorak_us.kbd
+  /usr/share/klavaro/dvorak_us_br.kbd
+  /usr/share/klavaro/dvorak_us_es.kbd
+  /usr/share/klavaro/dvorak_us_se.kbd
+  /usr/share/klavaro/eo_EO.paragraphs
+  /usr/share/klavaro/eo_EO.words
+  /usr/share/klavaro/eo_EO_about.txt
+  /usr/share/klavaro/eo_EO_adapt_intro.txt
+  /usr/share/klavaro/eo_EO_basic_intro.txt
+  /usr/share/klavaro/eo_EO_fluid_intro.txt
+  /usr/share/klavaro/eo_EO_help.txt
+  /usr/share/klavaro/eo_EO_intro.txt
+  /usr/share/klavaro/eo_EO_velo_intro.txt
+  /usr/share/klavaro/fingers_position.txt
+  /usr/share/klavaro/fr_FR.paragraphs
+  /usr/share/klavaro/fr_FR.words
+  /usr/share/klavaro/hu_HU.paragraphs
+  /usr/share/klavaro/hu_HU.words
+  /usr/share/klavaro/hu_HU_about.txt
+  /usr/share/klavaro/hu_HU_adapt_intro.txt
+  /usr/share/klavaro/hu_HU_basic_intro.txt
+  /usr/share/klavaro/hu_HU_fluid_intro.txt
+  /usr/share/klavaro/hu_HU_help.txt
+  /usr/share/klavaro/hu_HU_intro.txt
+  /usr/share/klavaro/hu_HU_velo_intro.txt
+  /usr/share/klavaro/jtsuken_ru.kbd
+  /usr/share/klavaro/pixmaps/hands_0.xpm
+  /usr/share/klavaro/pixmaps/hands_1.xpm
+  /usr/share/klavaro/pixmaps/hands_2.xpm
+  /usr/share/klavaro/pixmaps/hands_3.xpm
+  /usr/share/klavaro/pixmaps/hands_4.xpm
+  /usr/share/klavaro/pixmaps/hands_5.xpm
+  /usr/share/klavaro/pixmaps/hands_6.xpm
+  /usr/share/klavaro/pixmaps/hands_7.xpm
+  /usr/share/klavaro/pixmaps/hands_8.xpm
+  /usr/share/klavaro/pixmaps/hands_9.xpm
+  /usr/share/klavaro/pixmaps/logo.xpm
+  /usr/share/klavaro/pixmaps/shift.xpm
+  /usr/share/klavaro/pt_BR.paragraphs
+  /usr/share/klavaro/pt_BR.words
+  /usr/share/klavaro/pt_BR_about.txt
+  /usr/share/klavaro/pt_BR_adapt_intro.txt
+  /usr/share/klavaro/pt_BR_basic_intro.txt
+  /usr/share/klavaro/pt_BR_fluid_intro.txt
+  /usr/share/klavaro/pt_BR_help.txt
+  /usr/share/klavaro/pt_BR_intro.txt
+  /usr/share/klavaro/pt_BR_velo_intro.txt
+  /usr/share/klavaro/qwerty_br.kbd
+  /usr/share/klavaro/qwerty_br_abnt0.kbd
+  /usr/share/klavaro/qwerty_br_abnt2.kbd
+  /usr/share/klavaro/qwerty_cz.kbd
+  /usr/share/klavaro/qwerty_el.kbd
+  /usr/share/klavaro/qwerty_es.kbd
+  /usr/share/klavaro/qwerty_he.kbd
+  /usr/share/klavaro/qwerty_it.kbd
+  /usr/share/klavaro/qwerty_pt.kbd
+  /usr/share/klavaro/qwerty_se.kbd
+  /usr/share/klavaro/qwerty_us.kbd
+  /usr/share/klavaro/qwertz_cz.kbd
+  /usr/share/klavaro/qwertz_de.kbd
+  /usr/share/klavaro/qwertz_hu.kbd
+  /usr/share/klavaro/sv_SE.paragraphs
+  /usr/share/klavaro/sv_SE.words
+  /usr/share/klavaro/sv_SE_about.txt
+  /usr/share/klavaro/sv_SE_adapt_intro.txt
+  /usr/share/klavaro/sv_SE_basic_intro.txt
+  /usr/share/klavaro/sv_SE_fluid_intro.txt
+  /usr/share/klavaro/sv_SE_help.txt
+  /usr/share/klavaro/sv_SE_intro.txt
+  /usr/share/klavaro/sv_SE_velo_intro.txt
+  /usr/share/locale/cs_CZ/LC_MESSAGES/klavaro.mo
+  /usr/share/locale/de_DE/LC_MESSAGES/klavaro.mo
+  /usr/share/locale/eo_EO/LC_MESSAGES/klavaro.mo
+  /usr/share/locale/fr_FR/LC_MESSAGES/klavaro.mo
+  /usr/share/locale/hu_HU/LC_MESSAGES/klavaro.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/klavaro.mo
+  /usr/share/locale/sv_SE/LC_MESSAGES/klavaro.mo
+  /usr/share/man/man1/klavaro.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.9.7-1 -----
+Version bump.
+
+----- version 0.9.5-1 -----
+Version bump.
+
+----- version 0.9.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
