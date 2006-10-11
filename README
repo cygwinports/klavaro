@@ -5,20 +5,20 @@ Klavaro intends to be keyboard and language independent, saving memory
 and time (and money).
 
 Runtime requirements:
-  cygwin-1.5.20-1
+  cygwin-1.5.21-2
   atk-1.10.3-1
-  gtk2-x11-2.8.19-1
+  gtk2-x11-2.8.20-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.20-1
+  cygwin-1.5.21-2
   autoconf2.5-2.59-2
-  automake1.4-1.4p6-1
-  binutils-20050610-1
-  cygport-0.2.2-1
+  automake1.9-1.9.6-1
+  binutils-20060709-1
+  cygport-0.2.5-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  make-3.80-1
+  make-3.81-1
   pkg-config-0.20-1
   sed-4.1.5-1
 
@@ -31,29 +31,29 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack klavaro-0.9.8-X-src.tar.bz2
+  unpack klavaro-0.9.9-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./klavaro-0.9.8-X.cygport all
+  cygport ./klavaro-0.9.9-X.cygport all
 
 This will create:
-  /usr/src/klavaro-0.9.8-X-src.tar.bz2
-  /usr/src/klavaro-0.9.8-X.tar.bz2
+  /usr/src/klavaro-0.9.9-X-src.tar.bz2
+  /usr/src/klavaro-0.9.9-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/klavaro.exe
-  /usr/share/doc/Cygwin/klavaro-0.9.8.README
-  /usr/share/doc/klavaro-0.9.8/ABOUT-NLS
-  /usr/share/doc/klavaro-0.9.8/AUTHORS
-  /usr/share/doc/klavaro-0.9.8/COPYING
-  /usr/share/doc/klavaro-0.9.8/ChangeLog
-  /usr/share/doc/klavaro-0.9.8/INSTALL
-  /usr/share/doc/klavaro-0.9.8/NEWS
-  /usr/share/doc/klavaro-0.9.8/README
+  /usr/share/doc/Cygwin/klavaro-0.9.9.README
+  /usr/share/doc/klavaro-0.9.9/ABOUT-NLS
+  /usr/share/doc/klavaro-0.9.9/AUTHORS
+  /usr/share/doc/klavaro-0.9.9/COPYING
+  /usr/share/doc/klavaro-0.9.9/ChangeLog
+  /usr/share/doc/klavaro-0.9.9/INSTALL
+  /usr/share/doc/klavaro-0.9.9/NEWS
+  /usr/share/doc/klavaro-0.9.9/README
   /usr/share/klavaro/C.paragraphs
   /usr/share/klavaro/C.words
   /usr/share/klavaro/C_about.txt
@@ -166,6 +166,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.9.9-1 -----
+Version bump.
 
 ----- version 0.9.8-1 -----
 Version bump.
