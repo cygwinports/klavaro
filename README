@@ -35,27 +35,27 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack klavaro-1.0.4-X-src.tar.bz2
+  unpack klavaro-1.0.7-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./klavaro-1.0.4-X.cygport all
+  cygport ./klavaro-1.0.7-X.cygport all
 
 This will create:
-  /usr/src/klavaro-1.0.4-X-src.tar.bz2
-  /usr/src/klavaro-1.0.4-X.tar.bz2
+  /usr/src/klavaro-1.0.7-X-src.tar.bz2
+  /usr/src/klavaro-1.0.7-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/klavaro.exe
-  /usr/share/doc/klavaro-1.0.5/AUTHORS
-  /usr/share/doc/klavaro-1.0.5/COPYING
-  /usr/share/doc/klavaro-1.0.5/ChangeLog
-  /usr/share/doc/klavaro-1.0.5/INSTALL
-  /usr/share/doc/klavaro-1.0.5/NEWS
-  /usr/share/doc/klavaro-1.0.5/README
+  /usr/share/doc/klavaro-1.0.7/AUTHORS
+  /usr/share/doc/klavaro-1.0.7/COPYING
+  /usr/share/doc/klavaro-1.0.7/ChangeLog
+  /usr/share/doc/klavaro-1.0.7/INSTALL
+  /usr/share/doc/klavaro-1.0.7/NEWS
+  /usr/share/doc/klavaro-1.0.7/README
   /usr/share/klavaro/C.paragraphs
   /usr/share/klavaro/C.words
   /usr/share/klavaro/C_about.txt
@@ -214,7 +214,10 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 1.0.5-1 -----
+----- version 1.0.7-1 -----
+Version bump.
+
+----- version 1.0.6-1 -----
 Version bump.
 
 ----- version 1.0.5-1 -----
