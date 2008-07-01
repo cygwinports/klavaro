@@ -5,11 +5,11 @@ Klavaro intends to be keyboard and language independent, saving memory
 and time (and money).
 
 Runtime requirements:
-  cygwin-1.5.25-11
+  cygwin-1.5.25-15
   atk-1.22.0-1
-  gdk-pixbuf2-2.12.9-1
+  gdk-pixbuf2-2.12.10-1
   glib2-2.16.3-1
-  gtk2-x11-2.12.9-1
+  gtk2-x11-2.12.10-1
   libintl8-0.15-1
   pango-1.20.3-1
 
@@ -35,27 +35,28 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack klavaro-1.0.8-X-src.tar.bz2
+  unpack klavaro-1.1.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./klavaro-1.0.8-X.cygport all
+  cygport ./klavaro-1.1.1-X.cygport all
 
 This will create:
-  /usr/src/klavaro-1.0.8-X-src.tar.bz2
-  /usr/src/klavaro-1.0.8-X.tar.bz2
+  /usr/src/klavaro-1.1.1-X-src.tar.bz2
+  /usr/src/klavaro-1.1.1-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/klavaro.exe
-  /usr/share/doc/klavaro-1.0.8/AUTHORS
-  /usr/share/doc/klavaro-1.0.8/COPYING
-  /usr/share/doc/klavaro-1.0.8/ChangeLog
-  /usr/share/doc/klavaro-1.0.8/INSTALL
-  /usr/share/doc/klavaro-1.0.8/NEWS
-  /usr/share/doc/klavaro-1.0.8/README
+  /usr/bin/klavaro_helper.exe
+  /usr/share/doc/klavaro-1.1.1/AUTHORS
+  /usr/share/doc/klavaro-1.1.1/COPYING
+  /usr/share/doc/klavaro-1.1.1/ChangeLog
+  /usr/share/doc/klavaro-1.1.1/INSTALL
+  /usr/share/doc/klavaro-1.1.1/NEWS
+  /usr/share/doc/klavaro-1.1.1/README
   /usr/share/klavaro/C.paragraphs
   /usr/share/klavaro/C.words
   /usr/share/klavaro/C_about.txt
@@ -87,22 +88,22 @@ Files included in the binary package:
   /usr/share/klavaro/de_DE_fluid_intro.txt
   /usr/share/klavaro/de_DE_help.txt
   /usr/share/klavaro/de_DE_velo_intro.txt
-  /usr/share/klavaro/dvorak_br.kbd
+  /usr/share/klavaro/dvorak_br_nativo.kbd
   /usr/share/klavaro/dvorak_fr.kbd
   /usr/share/klavaro/dvorak_tr_F.kbd
   /usr/share/klavaro/dvorak_us.kbd
   /usr/share/klavaro/dvorak_us_br.kbd
   /usr/share/klavaro/dvorak_us_es.kbd
   /usr/share/klavaro/dvorak_us_se.kbd
-  /usr/share/klavaro/eo_XX.paragraphs
-  /usr/share/klavaro/eo_XX.words
-  /usr/share/klavaro/eo_XX_about.txt
-  /usr/share/klavaro/eo_XX_adapt_intro.txt
-  /usr/share/klavaro/eo_XX_basic_intro.txt
-  /usr/share/klavaro/eo_XX_fluid_intro.txt
-  /usr/share/klavaro/eo_XX_help.txt
-  /usr/share/klavaro/eo_XX_intro.txt
-  /usr/share/klavaro/eo_XX_velo_intro.txt
+  /usr/share/klavaro/eo.paragraphs
+  /usr/share/klavaro/eo.words
+  /usr/share/klavaro/eo_about.txt
+  /usr/share/klavaro/eo_adapt_intro.txt
+  /usr/share/klavaro/eo_basic_intro.txt
+  /usr/share/klavaro/eo_fluid_intro.txt
+  /usr/share/klavaro/eo_help.txt
+  /usr/share/klavaro/eo_intro.txt
+  /usr/share/klavaro/eo_velo_intro.txt
   /usr/share/klavaro/es_ES.paragraphs
   /usr/share/klavaro/es_ES.words
   /usr/share/klavaro/es_ES_about.txt
@@ -132,6 +133,7 @@ Files included in the binary package:
   /usr/share/klavaro/hu_HU_intro.txt
   /usr/share/klavaro/hu_HU_velo_intro.txt
   /usr/share/klavaro/jtsuken_ru.kbd
+  /usr/share/klavaro/klavaro_test.txt
   /usr/share/klavaro/nl_BE.paragraphs
   /usr/share/klavaro/nl_BE.words
   /usr/share/klavaro/nl_BE_about.txt
@@ -172,7 +174,6 @@ Files included in the binary package:
   /usr/share/klavaro/pt_BR_intro.txt
   /usr/share/klavaro/pt_BR_velo_intro.txt
   /usr/share/klavaro/qwerty_br.kbd
-  /usr/share/klavaro/qwerty_br_abnt0.kbd
   /usr/share/klavaro/qwerty_br_abnt2.kbd
   /usr/share/klavaro/qwerty_cz.kbd
   /usr/share/klavaro/qwerty_el.kbd
@@ -182,12 +183,22 @@ Files included in the binary package:
   /usr/share/klavaro/qwerty_pt.kbd
   /usr/share/klavaro/qwerty_se.kbd
   /usr/share/klavaro/qwerty_tr.kbd
+  /usr/share/klavaro/qwerty_uk.kbd
   /usr/share/klavaro/qwerty_us.kbd
   /usr/share/klavaro/qwerty_us2.kbd
   /usr/share/klavaro/qwertz_cz.kbd
   /usr/share/klavaro/qwertz_de.kbd
   /usr/share/klavaro/qwertz_hu.kbd
   /usr/share/klavaro/qwertz_pl.kbd
+  /usr/share/klavaro/ru_RU.paragraphs
+  /usr/share/klavaro/ru_RU.words
+  /usr/share/klavaro/ru_RU_about.txt
+  /usr/share/klavaro/ru_RU_adapt_intro.txt
+  /usr/share/klavaro/ru_RU_basic_intro.txt
+  /usr/share/klavaro/ru_RU_fluid_intro.txt
+  /usr/share/klavaro/ru_RU_help.txt
+  /usr/share/klavaro/ru_RU_intro.txt
+  /usr/share/klavaro/ru_RU_velo_intro.txt
   /usr/share/klavaro/sv_SE.paragraphs
   /usr/share/klavaro/sv_SE.words
   /usr/share/klavaro/sv_SE_about.txt
@@ -199,7 +210,7 @@ Files included in the binary package:
   /usr/share/klavaro/sv_SE_velo_intro.txt
   /usr/share/locale/cs_CZ/LC_MESSAGES/klavaro.mo
   /usr/share/locale/de_DE/LC_MESSAGES/klavaro.mo
-  /usr/share/locale/eo_XX/LC_MESSAGES/klavaro.mo
+  /usr/share/locale/eo/LC_MESSAGES/klavaro.mo
   /usr/share/locale/es_ES/LC_MESSAGES/klavaro.mo
   /usr/share/locale/fr_FR/LC_MESSAGES/klavaro.mo
   /usr/share/locale/hu_HU/LC_MESSAGES/klavaro.mo
@@ -207,12 +218,16 @@ Files included in the binary package:
   /usr/share/locale/nl_NL/LC_MESSAGES/klavaro.mo
   /usr/share/locale/pl_PL/LC_MESSAGES/klavaro.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/klavaro.mo
+  /usr/share/locale/ru_RU/LC_MESSAGES/klavaro.mo
   /usr/share/locale/sv_SE/LC_MESSAGES/klavaro.mo
   /usr/share/man/man1/klavaro.1.gz
 
 ------------------
 
 Port Notes:
+
+----- version 1.1.1-1 -----
+Version bump.
 
 ----- version 1.0.8-1 -----
 Version bump.

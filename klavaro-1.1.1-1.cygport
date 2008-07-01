@@ -1,0 +1,5 @@
+DESCRIPTION="GNOME touch typing tutor"
+HOMEPAGE="http://klavaro.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+
+WANT_AUTOMAKE="1.9"
