@@ -8,7 +8,7 @@ Runtime requirements:
   cygwin-1.5.25-15
   atk-1.22.0-1
   gdk-pixbuf2-2.12.11-1
-  glib2-2.16.4-1
+  glib2-2.16.5-1
   gtk2-x11-2.12.11-1
   libintl8-0.15-1
   pango-1.20.5-1
@@ -18,7 +18,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.10-1.10.1-1
   binutils-20080523-1
-  cygport-0.3.12-1
+  cygport-0.4.0-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gnome-common-2.20.0-2
@@ -35,15 +35,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack klavaro-1.1.4-X-src.tar.bz2
+  unpack klavaro-1.1.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./klavaro-1.1.4-X.cygport all
+  cygport ./klavaro-1.1.5-X.cygport all
 
 This will create:
-  /usr/src/klavaro-1.1.4-X-src.tar.bz2
-  /usr/src/klavaro-1.1.4-X.tar.bz2
+  /usr/src/klavaro-1.1.5-X-src.tar.bz2
+  /usr/src/klavaro-1.1.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -51,12 +51,12 @@ Files included in the binary package:
 
   /usr/bin/klavaro.exe
   /usr/bin/klavaro_helper.exe
-  /usr/share/doc/klavaro-1.1.4/AUTHORS
-  /usr/share/doc/klavaro-1.1.4/COPYING
-  /usr/share/doc/klavaro-1.1.4/ChangeLog
-  /usr/share/doc/klavaro-1.1.4/INSTALL
-  /usr/share/doc/klavaro-1.1.4/NEWS
-  /usr/share/doc/klavaro-1.1.4/README
+  /usr/share/doc/klavaro-1.1.5/AUTHORS
+  /usr/share/doc/klavaro-1.1.5/COPYING
+  /usr/share/doc/klavaro-1.1.5/ChangeLog
+  /usr/share/doc/klavaro-1.1.5/INSTALL
+  /usr/share/doc/klavaro-1.1.5/NEWS
+  /usr/share/doc/klavaro-1.1.5/README
   /usr/share/klavaro/C.paragraphs
   /usr/share/klavaro/C.words
   /usr/share/klavaro/C_about.txt
@@ -180,6 +180,7 @@ Files included in the binary package:
   /usr/share/klavaro/qwerty_es.kbd
   /usr/share/klavaro/qwerty_he.kbd
   /usr/share/klavaro/qwerty_it.kbd
+  /usr/share/klavaro/qwerty_jp.kbd
   /usr/share/klavaro/qwerty_pt.kbd
   /usr/share/klavaro/qwerty_se.kbd
   /usr/share/klavaro/qwerty_tr.kbd
@@ -221,10 +222,14 @@ Files included in the binary package:
   /usr/share/locale/ru_RU/LC_MESSAGES/klavaro.mo
   /usr/share/locale/sv_SE/LC_MESSAGES/klavaro.mo
   /usr/share/man/man1/klavaro.1.gz
+  /usr/share/man/man1/klavaro_helper.1.gz
 
 ------------------
 
 Port Notes:
+
+----- version 1.1.5-1 -----
+Version bump.
 
 ----- version 1.1.4-1 -----
 Version bump.
