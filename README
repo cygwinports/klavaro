@@ -6,22 +6,23 @@ and time (and money).
 
 Runtime requirements:
   cygwin-1.5.25-15
-  atk-1.22.0-1
-  gdk-pixbuf2-2.12.12-1
-  glib2-2.16.6-1
-  gtk2-x11-2.12.12-1
+  libatk1.0_0-1.24.0-1
+  libcurl4-7.16.3-1
+  libgdk_pixbuf2.0_0-2.14.6-1
+  libglib2.0_0-2.16.6-1
+  libgtk2.0_0-2.14.6-1
   libintl8-0.17-2
-  pango-1.20.5-1
+  libpango1.0_0-1.22.4-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-1
-  automake1.10-1.10.1-1
+  automake1.10-1.10.1-2
   binutils-20080524-1
-  cygport-0.4.2-1
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-2
+  gnome-common-2.24.0-1
   make-3.81-1
   pkg-config-0.23a-2
   sed-4.1.5-2
@@ -35,15 +36,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack klavaro-1.1.7-X-src.tar.bz2
+  unpack klavaro-1.1.8-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./klavaro-1.1.7-X.cygport all
+  cygport ./klavaro-1.1.8-X.cygport all
 
 This will create:
-  /usr/src/klavaro-1.1.7-X-src.tar.bz2
-  /usr/src/klavaro-1.1.7-X.tar.bz2
+  /usr/src/klavaro-1.1.8-X-src.tar.bz2
+  /usr/src/klavaro-1.1.8-X.tar.bz2
 
 -------------------------------------------
 
@@ -51,12 +52,12 @@ Files included in the binary package:
 
   /usr/bin/klavaro.exe
   /usr/bin/klavaro_helper.exe
-  /usr/share/doc/klavaro-1.1.7/AUTHORS
-  /usr/share/doc/klavaro-1.1.7/COPYING
-  /usr/share/doc/klavaro-1.1.7/ChangeLog
-  /usr/share/doc/klavaro-1.1.7/INSTALL
-  /usr/share/doc/klavaro-1.1.7/NEWS
-  /usr/share/doc/klavaro-1.1.7/README
+  /usr/share/doc/klavaro-1.1.8/AUTHORS
+  /usr/share/doc/klavaro-1.1.8/COPYING
+  /usr/share/doc/klavaro-1.1.8/ChangeLog
+  /usr/share/doc/klavaro-1.1.8/INSTALL
+  /usr/share/doc/klavaro-1.1.8/NEWS
+  /usr/share/doc/klavaro-1.1.8/README
   /usr/share/klavaro/C.paragraphs
   /usr/share/klavaro/C.words
   /usr/share/klavaro/C_about.txt
@@ -209,8 +210,10 @@ Files included in the binary package:
   /usr/share/klavaro/sv_SE_help.txt
   /usr/share/klavaro/sv_SE_intro.txt
   /usr/share/klavaro/sv_SE_velo_intro.txt
+  /usr/share/locale/bn_BD/LC_MESSAGES/klavaro.mo
   /usr/share/locale/cs_CZ/LC_MESSAGES/klavaro.mo
   /usr/share/locale/de_DE/LC_MESSAGES/klavaro.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/klavaro.mo
   /usr/share/locale/eo/LC_MESSAGES/klavaro.mo
   /usr/share/locale/es_ES/LC_MESSAGES/klavaro.mo
   /usr/share/locale/fr_FR/LC_MESSAGES/klavaro.mo
@@ -221,12 +224,16 @@ Files included in the binary package:
   /usr/share/locale/pt_BR/LC_MESSAGES/klavaro.mo
   /usr/share/locale/ru_RU/LC_MESSAGES/klavaro.mo
   /usr/share/locale/sv_SE/LC_MESSAGES/klavaro.mo
+  /usr/share/locale/vi_VN/LC_MESSAGES/klavaro.mo
   /usr/share/man/man1/klavaro.1.gz
   /usr/share/man/man1/klavaro_helper.1.gz
 
 ------------------
 
 Port Notes:
+
+----- version 1.1.8-1 -----
+Version bump.
 
 ----- version 1.1.7-1 -----
 Version bump.
