@@ -1,0 +1,74 @@
+Use icon support in GtkEntry (2.16+).
+
+--- origsrc/klavaro-1.3.1/configure.in	2009-09-12 12:22:51.000000000 -0500
++++ src/klavaro-1.3.1/configure.in	2009-09-24 21:11:10.148101500 -0500
+@@ -15,7 +15,7 @@ AC_CHECK_PROG([GTKBLDRCONV], [gtk-builde
+ AC_HEADER_STDC
+ AC_CHECK_HEADERS([locale.h stdlib.h string.h unistd.h])
+ 
+-pkg_modules="gtk+-2.0 >= 2.12.11, gtkdatabox >= 0.9.0.0, libcurl >= 2.18.2, libsexy >= 0.1.11"
++pkg_modules="gtk+-2.0 >= 2.16.0, gtkdatabox >= 0.9.0.0, libcurl >= 2.18.2"
+ PKG_CHECK_MODULES(PACKAGE, [$pkg_modules])
+ AC_SUBST(PACKAGE_CFLAGS)
+ AC_SUBST(PACKAGE_LIBS)
+--- origsrc/klavaro-1.3.1/src/tutor.c	2009-08-12 20:23:37.000000000 -0500
++++ src/klavaro-1.3.1/src/tutor.c	2009-09-24 21:44:40.976156800 -0500
+@@ -22,7 +22,6 @@
+ #include <glib.h>
+ #include <glib/gstdio.h>
+ #include <gtk/gtk.h>
+-#include <libsexy/sexy-icon-entry.h>
+ 
+ #include "main.h"
+ #include "auxiliar.h"
+@@ -140,7 +139,7 @@ tutor_goal_fluidity ()
+ static GtkWidget *entry_mesg = NULL;
+ 
+ void
+-on_entry_mesg_restart_clicked (SexyIconEntry *entry, gint pos, gint but, gpointer data)
++on_entry_mesg_restart_clicked (GtkEntry *entry, GtkEntryIconPosition pos, GdkEvent *event, gpointer data)
+ {
+ 	if (tutor_get_query () == QUERY_END)
+ 		return;
+@@ -152,18 +151,14 @@ on_entry_mesg_restart_clicked (SexyIconE
+ void
+ tutor_entry_mesg_init ()
+ {
+-	GtkWidget *img;
+-
+-	img = gtk_image_new_from_stock (GTK_STOCK_CLEAR, GTK_ICON_SIZE_MENU);
+-	entry_mesg = sexy_icon_entry_new ();
+-	sexy_icon_entry_set_icon (SEXY_ICON_ENTRY (entry_mesg), SEXY_ICON_ENTRY_SECONDARY, GTK_IMAGE (img));
+-	sexy_icon_entry_set_icon_highlight (SEXY_ICON_ENTRY (entry_mesg), SEXY_ICON_ENTRY_SECONDARY, TRUE);
++	entry_mesg = gtk_entry_new ();
++	gtk_entry_set_icon_from_stock (GTK_ENTRY (entry_mesg), GTK_ENTRY_ICON_SECONDARY, GTK_STOCK_CLEAR);
+ 
+ 	gtk_widget_destroy (get_wg ("entry_mesg"));
+ 	gtk_box_pack_start_defaults (GTK_BOX (get_wg ("hbox_bottom_mesg")), entry_mesg);
+ 	gtk_box_reorder_child (GTK_BOX (get_wg ("hbox_bottom_mesg")), entry_mesg, 0);
+ 
+-	g_signal_connect (G_OBJECT (entry_mesg), "icon-pressed", (GCallback) on_entry_mesg_restart_clicked, NULL);
++	g_signal_connect (G_OBJECT (entry_mesg), "icon-press", (GCallback) on_entry_mesg_restart_clicked, NULL);
+ 	g_signal_connect (G_OBJECT (entry_mesg), "drag-drop", (GCallback) on_entry_mesg_drag_drop, NULL);
+ 	g_signal_connect_after (G_OBJECT (entry_mesg), "focus-out-event", (GCallback) on_entry_mesg_focus_out_event, NULL);
+ 	g_signal_connect_after (G_OBJECT (entry_mesg), "grab-focus", (GCallback) on_entry_mesg_grab_focus, NULL);
+--- origsrc/klavaro-1.3.1/src/tutor.h	2009-07-26 07:38:10.000000000 -0500
++++ src/klavaro-1.3.1/src/tutor.h	2009-09-24 21:45:04.909022500 -0500
+@@ -10,7 +10,7 @@
+ /*  along with this program.  If not, see <http://www.gnu.org/licenses/>.    */
+ /*****************************************************************************/
+ 
+-#include <libsexy/sexy-icon-entry.h>
++#include <gtk/gtk.h>
+ 
+ /*
+  * Special colors
+@@ -78,7 +78,7 @@ gdouble tutor_goal_speed (void);
+ 
+ gdouble tutor_goal_fluidity (void);
+ 
+-void on_entry_mesg_restart_clicked (SexyIconEntry *entry, gint pos, gint but, gpointer data);
++void on_entry_mesg_restart_clicked (GtkEntry *entry, GtkEntryIconPosition pos, GdkEvent *event, gpointer data);
+ 
+ void tutor_entry_mesg_init (void);
+ 
