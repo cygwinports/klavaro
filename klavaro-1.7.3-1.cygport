@@ -1,7 +1,7 @@
 DESCRIPTION="GNOME touch typing tutor"
 HOMEPAGE="http://klavaro.sourceforge.net/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
-PATCH_URI="1.3.1-gtkentryicon.patch
-           1.3.6-xdg-menu.patch"
+PATCH_URI="1.3.6-xdg-menu.patch"
 
+CFLAGS+=" -I/usr/include/gtkdatabox"
 LDFLAGS+=" -Wl,--export-all-symbols"
