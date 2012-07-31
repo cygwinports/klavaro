@@ -1,6 +1,0 @@
-category: Gnome Games
-requires: libcurl4 libglib2.0_0 libgtk2.0_0 libgtkdatabox0.9.1_1 libintl8 libpango1.0_0
-sdesc: "GTK+ touch typing tutor"
-ldesc: "Klavaro is just another free touch typing tutor program, based
-on GTK2. Klavaro intends to be keyboard and language independent, saving
-memory and time (and money)."

@@ -1,6 +1,0 @@
-DESCRIPTION="GNOME touch typing tutor"
-HOMEPAGE="http://klavaro.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
-
-CFLAGS+=" -I/usr/include/gtkdatabox"
-LDFLAGS+=" -Wl,--export-all-symbols"
