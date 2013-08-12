@@ -1,10 +1,15 @@
-CATEGORY="Games Gnome"
+inherit gnome2
+
+NAME="klavaro"
+VERSION=1.9.7
+RELEASE=1
+CATEGORY="Games"
 SUMMARY="GTK+ touch typing tutor"
 DESCRIPTION="Klavaro is just another free touch typing tutor program, based
 on GTK2. Klavaro intends to be keyboard and language independent, saving
 memory and time (and money)."
 HOMEPAGE="http://klavaro.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+SRC_URI="mirror://sourceforge/klavaro/klavaro-${VERSION}.tar.bz2"
 
 DEPEND="pkgconfig(gtk+-2.0)
 	pkgconfig(gtkdatabox)
