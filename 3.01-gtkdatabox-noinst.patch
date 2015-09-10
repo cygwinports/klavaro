@@ -1,0 +1,8 @@
+--- origsrc/klavaro-3.01/gtkdatabox/Makefile.am	2014-09-05 09:26:12.000000000 -0500
++++ src/klavaro-3.01/gtkdatabox/Makefile.am	2015-09-09 20:27:10.366510500 -0500
+@@ -1,4 +1,4 @@
+-lib_LTLIBRARIES		= libgtkdataboks.la
++noinst_LTLIBRARIES		= libgtkdataboks.la
+ libgtkdataboks_la_SOURCES= \
+ 			gtkdatabox.c\
+ 			gtkdatabox_marshal.c\

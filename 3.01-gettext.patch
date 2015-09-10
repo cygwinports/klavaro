@@ -1,0 +1,17 @@
+--- origsrc/klavaro-3.01/configure.ac	2014-09-08 07:15:26.000000000 -0500
++++ src/klavaro-3.01/configure.ac	2015-09-09 20:06:35.349683300 -0500
+@@ -48,9 +48,6 @@ GETTEXT_PACKAGE=klavaro
+ AC_SUBST(GETTEXT_PACKAGE)
+ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package.])
+ 
+-AM_GNU_GETTEXT([external])
+-AM_GNU_GETTEXT_VERSION([0.18.3])
+-
+ AM_CONDITIONAL(IS_WIN32, test `uname` = "MINGW32_NT-6.1")
+ AM_CONDITIONAL(IS_POSIX, test  `uname` != "MINGW32_NT-6.1" -a `uname` != "Darwin")
+ 
+--- origsrc/klavaro-3.01/po/LINGUAS	2014-09-09 13:57:02.000000000 -0500
++++ src/klavaro-3.01/po/LINGUAS	2015-09-09 20:03:05.331014300 -0500
+@@ -1 +1 @@
+-ar bg bn cs da de el en_GB eo es eu fi fr gl hu it kk ky nb nl pa pl pt_BR ru sl sv te uk ur vi wo zh_CN
++ar bg bn cs da de el eo es eu fi fr gl hu it kk ky nb nl pa pl pt_BR ru sl sv te uk ur vi wo zh_CN

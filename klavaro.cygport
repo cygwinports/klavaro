@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="klavaro"
-VERSION=1.9.7
+VERSION=3.01
 RELEASE=1
 CATEGORY="Games"
 SUMMARY="GTK+ touch typing tutor"
@@ -10,10 +10,13 @@ on GTK2. Klavaro intends to be keyboard and language independent, saving
 memory and time (and money)."
 HOMEPAGE="http://klavaro.sourceforge.net/"
 SRC_URI="mirror://sourceforge/klavaro/klavaro-${VERSION}.tar.bz2"
+PATCH_URI="
+	3.01-gettext.patch
+	3.01-gtkdatabox-noinst.patch
+	3.01-vpath.patch
+"
 
-DEPEND="pkgconfig(gtk+-2.0)
-	pkgconfig(gtkdatabox)
+DEPEND="pkgconfig(gtk+-3.0)
 	pkgconfig(libcurl)"
 
-CFLAGS+=" -I/usr/include/gtkdatabox"
 LDFLAGS+=" -Wl,--export-all-symbols"
